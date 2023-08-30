@@ -57,7 +57,7 @@ $('#card-panel-4').click(function(){
     $('#card-panel-4').hide(3000);
 });
 
-// Method Chaining challenge 1
+// Method Chaining Challenge
 
 $('button').mouseenter(function(){
     $('button').removeClass('make-red').addClass('make-border');
@@ -67,4 +67,14 @@ $('button').mouseleave(function(){
     $('button').removeClass('make-border').addClass('make-red');
 });
 
+// The Importance of this Challenge 1
+
+$('p').click(function(){
+    $(this).text('Changed only the text for this paragraph')
+});
+$('.card').mouseenter(function(){
+    $(this).fadeTo(2000, 0.2).fadeTo(2000, 1);
+});
+
+// The Importance of this Challenge 2
 
