@@ -78,3 +78,9 @@ $('.card').mouseenter(function(){
 
 // The Importance of this Challenge 2
 
+$('.module-nav').on('click', function() {
+    let allModulesCardsSelector = ".card";
+    let thisModuleCardsSelector = "." + this.id + "-card";
+    $(allModulesCardsSelector).removeClass('card-highlight');
+    $(thisModuleCardsSelector).addClass('card-highlight');
+});
