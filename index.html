@@ -13,7 +13,7 @@
     <script>
         fetch("https://ci-swapi.herokuapp.com/api/")
             .then(response => response.text()) // or .json()
-            .then(data => displayData(data))
+            .then(data => displayData(data)) //Callback function
             .catch((e) => {
                 console.error('Error: ', e);
             })
